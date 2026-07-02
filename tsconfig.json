@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    // Modern JS target: both Chrome (MV3) and Firefox 109+ support ES2022.
+    "target": "ES2022",
+    "module": "ESNext",
+    // "bundler" resolution matches how esbuild resolves imports.
+    "moduleResolution": "bundler",
+    // Strictness: this is a public repository, so we want the compiler
+    // to catch as much as possible before review does.
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    // esbuild does the emitting; tsc is used for type-checking only.
+    "noEmit": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "lib": ["ES2022", "DOM"]
+  },
+  "include": ["src/**/*.ts"]
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Interruption Counter</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <main class="popup">
+    <h1 class="popup__title">Interruption Counter</h1>
+
+    <!-- Phase 1 placeholder: the real daily counter arrives in Phase 3. -->
+    <p class="popup__counter" id="counter">0 interruptions today</p>
+
+    <!--
+      Connection check: the popup pings the background on load and shows
+      the result here. This proves the popup <-> background messaging
+      channel works on both Chrome and Firefox before we build real
+      features on top of it.
+    -->
+    <p class="popup__status" id="status">Connecting to background…</p>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>

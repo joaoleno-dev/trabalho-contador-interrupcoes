@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Interruption Counter",
+  "version": "0.1.0",
+  "description": "Record and measure work interruptions - especially the ones caused by your boss. One click pauses all media, starts a stopwatch and logs the interruption.",
+  "action": {
+    "default_title": "Interruption Counter",
+    "default_popup": "popup/popup.html"
+  },
+  "permissions": ["storage", "scripting", "tabs"],
+  "host_permissions": ["<all_urls>"]
+}
